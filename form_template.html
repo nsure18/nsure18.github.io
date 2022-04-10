@@ -9,8 +9,19 @@
   <!-- <link rel="stylesheet" href="css/formstyle.css"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/b531f3750a.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display&display=swap" rel="stylesheet">
   <title>Contact Form</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7000NYQ3X2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7000NYQ3X2');
+</script>
+    
 </head>
 <body id="formbody">
   <header>
@@ -63,7 +74,7 @@
 
     <br> 
     <input type="checkbox" name="remembered" id="remembered"> 
-    <label for="remembered">Remember me</label>
+    <label id="rem" for="remembered">Remember me</label>
      
     <input type="submit" name="submit" value="Get in touch!">
   </fieldset>

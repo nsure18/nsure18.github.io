@@ -439,7 +439,7 @@ form {
   #beginner.b, #intermediate.i, #advanced.a {  
     display: inline;
     text-align: left;
-    width: 25%;
+    width: 22%;
   }
 
   @media screen and (min-width: 750px) {
