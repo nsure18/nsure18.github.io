@@ -384,13 +384,14 @@ form {
   
   label{
     display: inline-block;
+    margin-top: 10px;
     margin-right:10px;
     width:15%;
   }
   input {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px 0px 15px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -434,7 +435,7 @@ form {
   #beginner.b, #intermediate.i, #advanced.a {  
     display: inline;
     text-align: left;
-    width: 10%;
+    width: 25%;
   }
 
   @media screen and (min-width: 765px) {
