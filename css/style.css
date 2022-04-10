@@ -432,6 +432,10 @@ form {
     opacity: 0.8;
   }
   
+  #rem {
+    display: inline;
+  }
+
   #beginner.b, #intermediate.i, #advanced.a {  
     display: inline;
     text-align: left;
