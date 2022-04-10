@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/email.png"/>
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/formstyle.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>Contact Form</title>
+</head>
+<body id="formbody">
+  <header>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me <i class="fa-solid fa-eye"></i></a></li>
+        <li><a href="foodmemories.html">Memories <i class="fa-solid fa-rainbow"></i></a></li>
+        <li><a href="bobarecs.html">Boba Recommendations <i class="fa-solid fa-mug-hot"></i></a></li>
+        <li><a href="recipe.html">Recipe of the Week <i class="fa-solid fa-cookie-bite"></i></a></li>
+        <li class="active"><a href="form_template.html">Contact the Author <i class="fa-solid fa-message"></i></a> </li>
+    </ul>
+    </nav>
+    <div class="sample-header">
+    </div>
+  <h1 id="typewriter">What's On Your Mind?</h1>
+</header>
+<main id="skip">
+ <form
+ action="https://formspree.io/f/xzbovgkv"
+ method="POST">
+  <fieldset>
+    <legend>Contact The Author</legend>
+    <label for="name">Your Name</label>
+    <input type="text" name="name" required placeholder="Enter Your Name" id="name">
+
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email">
+
+    <label for="favoritefood">Your Favorite Food</label>
+    <input type="text" name="favorite food" id="favoritefood">
+
+    <p>How  would you rate your cooking skills?</p>
+    <input class="b" type="radio" name="exp" id="beginner" value="yes">
+    <label for="beginner">Beginner</label>
+    <input class="i" type="radio" name="exp" id="intermediate" value="yes">
+    <label for="intermediate">Intermediate</label>
+    <input class="a" type="radio" name="exp" id="advanced" value="yes">
+    <label for="advanced">Advanced</label>
+
+    <br>
+    <label for="number">Your Phone Number</label>
+    <input type="tel" name="number" id="number">
+    <div><span>Format: 123-456-7890</span></div>
+
+
+    <label for="message">Message: </label>
+ 
+    <textarea name="message" id="message"></textarea>
+
+    <br> 
+    <input type="checkbox" name="remembered" id="remembered"> 
+    <label for="remembered">Remember me</label>
+     
+    <input type="submit" name="submit" value="Get in touch!">
+  </fieldset>
+ </form>
+</main>
+<footer>
+  <p><i class="fa-solid fa-cheese"></i>
+      Neha Sure &copy; 2022</p>
+</footer>
+</body>
+</html>

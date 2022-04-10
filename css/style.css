@@ -1,0 +1,541 @@
+body {
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-image: url(../images/gbhouse.png);
+}
+
+p {
+    line-height: 17px;
+}
+
+nav{
+    background-color: rgb(164, 175, 236);
+    min-height: 50px;
+    min-width: fit-content;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 5%;
+}
+
+nav > ul {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+}
+
+nav li{
+    display: inline;
+    border: 2px solid rgb(63, 58, 58);
+    border-radius: 4px;
+    padding: 20px;
+    margin: 4px;
+    background: rgb(50, 6, 117);
+ }
+
+nav li a{
+    color: honeydew;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+nav li a:visited {
+    color: rgb(176, 158, 158);
+}
+
+nav li a:hover {
+    color: rgb(100, 147, 192);
+    text-decoration: underline;
+ }
+
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 20px 10px 10px 10px;
+}
+
+figure figcaption {
+    font-size:12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    font-style: italic;
+    margin: 10px;
+    color:rgb(45, 77, 136);
+}
+
+h3 {
+    font-size: 17px;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+img {
+    width: 200px;
+    border: 10px solid rgb(37, 7, 25);
+    padding: 2px;
+    margin: 16px 4px 6px 4px;
+    border-radius: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    width: 300px;
+    border: 10px dashed rgb(154, 95, 160);
+    padding: 3px;
+    margin: 6px;
+    border-radius: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: rgb(164, 175, 236);
+    height: 50px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.active {
+    background-color: rgb(253, 253, 253);
+    border: rgb(37, 7, 25) dotted 4px;
+    padding: 10px 7px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+li.active a {
+    color:rgb(37, 7, 25)
+}
+
+.date {
+    text-align: right;
+    font-style: normal;
+    font-size: medium;
+}
+
+.memories {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.boba {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.boba p {
+    text-align: center;
+}
+
+#sharetea, #teaninja, #quickly {
+    color:rgb(60, 55, 58);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.boba > .sharetea > div > a > img {
+    border: 10px solid rgb(172, 182, 223);
+}
+
+#sharetea {
+    background-color: rgb(172, 182, 223);
+}
+
+.boba > .quickly > div > a > img {
+    border: 10px solid rgb(191, 187, 227);
+}
+
+#quickly {
+    background-color: rgb(191, 187, 227);
+}
+.boba > .teaninja > div > a > img {
+    border: 10px solid rgb(215, 194, 239);
+}
+
+#teaninja {
+    background-color: rgb(215, 194, 239);
+}
+
+
+#mainpic {
+    animation-name: welcome;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+#mainpic:hover {
+    width: 200px;
+    border: 10px solid rgb(37, 7, 25);
+    padding: 2px;
+    margin: 16px 4px 6px 4px;
+    border-radius: 1%;
+}
+
+@keyframes welcome {
+    from {width:25px;opacity: 0;}
+    to {width:350px;opacity: 1;}
+}
+
+.figure {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.capn {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.essay {
+    padding: 10px 30px 10px;
+}
+
+.para {
+    padding:7px 0px;
+}
+
+main {
+    padding-bottom: 15px;
+}
+
+.recipe {
+    padding: 20px 30px;
+}
+
+.memories img {
+    animation-name: blurry;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes blurry {
+    from {filter: blur(2px);width: 400px;}
+    to {filter: blur(0px);width: 200px;}
+}
+
+#mpara {
+    margin-bottom: 600px;
+}
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+
+  .memories img {
+    filter: drop-shadow(10px 10px 10px #A4BBFF);
+  }
+
+  .memories p {
+    padding: 5px;
+}
+
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 320px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus-within .flip-card-inner,
+  .flip-card:active .flip-card-inner,
+  .flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+   background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(142, 125, 219);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .tagbuttons {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+  button {
+    padding: 5px 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: medium;
+    font-weight: bolder;
+    color:rgb(90, 70, 161);
+    background-color: rgb(216, 200, 220);
+    border: rgb(60, 55, 58) solid 2px;
+    border-radius: 10px;
+    min-width: fit-content;
+    display: inline-block;
+  }
+
+  #formbody {
+      background-image: none;
+  }
+
+  #typewriter {
+  color: #262626;
+  overflow: hidden;   
+  border-right: .10em solid #FF8D8D;
+  white-space: nowrap;   
+  margin: 15px auto;  
+  /* text-align: center;  */
+  letter-spacing: .3rem;   
+  animation: demo-typewriter 3s steps(30, end), demo-cursor 1s step-end infinite;
+}
+@keyframes demo-typewriter {
+  from { 
+    width: 0;
+  }
+  to { 
+    width: 100%;
+  }
+}
+
+@keyframes demo-cursor {
+  from, to { 
+    border-color: transparent; 
+}
+  50% { 
+border-color: #FF8D8D; 
+  }
+}  
+
+  .sample-header {
+    background-image: url(../images/px2.png);
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  legend{ 
+    font-size: 125%;
+    font-style:italic;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  label{
+    display: inline-block;
+    margin-right:10px;
+    width:15%;
+  }
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  span{
+    margin-left:20%;
+    font-family: italic;
+    font-weight: bold;
+  }
+  
+  textarea{
+    width: 100%;
+    height: 35vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  
+  input[type=checkbox]{
+      display:inline;
+      width:inherit;
+  }
+  
+  input[type=submit] {
+    background-color: #384980;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+  
+  #beginner.b, #intermediate.i, #advanced.a {  
+    display: inline;
+    text-align: left;
+    width: 10%;
+  }
+
+  @media screen and (min-width: 765px) {
+    nav > ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .memories {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px 10px;
+        align-content: center;
+    }
+
+    .memories img {
+        filter: none;
+      }
+
+    .memories div {
+        border: 3px grey solid;
+        margin: 5px;
+        padding: 3px;
+    }
+
+  /*  .memory7 {
+        align-self: center;
+    } */
+
+    .boba {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        row-gap: 10px;
+        column-gap: 20px;
+    }
+
+    .sharetea, .teaninja, .quickly {
+        display: flex;
+        flex-direction: column;
+        max-width: 230px;
+        align-items: stretch;
+    }
+
+    a.skip:focus{
+        top: 130px;
+    }
+
+    form{
+        width: 80%;
+        margin: 0 auto;
+      }
+    
+      input{
+        width:80%;
+      }
+    
+      textarea{
+        width:80%;
+        height: 25vh;
+     }
+     
+     div + label{
+        line-height: 25vh;
+        vertical-align:top;
+     }
+    
+      label {
+        font-weight: bold;
+        display: inline-block;
+      }
+}
+
+  @media screen and (min-width: 1000px) {
+    nav > ul {
+        justify-content: space-evenly;
+    }
+    .memories {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: stretch;
+    }
+
+
+    a.skip:focus{
+        top: 90px;
+    }
+
+    .boba{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    #mainpic, .memories img, .flip-card-inne, #typewriter{
+    -webkit-transition: initial; /* sets to default setting */
+    transition: initial; /* sets to default setting */
+    animation-duration: initial;
+    }
+    .sample-header {
+        background-attachment: scroll;
+    }
+ 
+}
+
+
